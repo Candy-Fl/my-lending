@@ -1,0 +1,24 @@
+{
+  "name": "new-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
+    "watch:css": "onchange 'src/scss/**/*.scss' -- npm run scss",
+    "watch":"sass --watch src/scss:dist/css",
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run watch:css\"",
+    "start": "npm-run-all --parallel watch serve watch:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "concurrently": "^6.5.0",
+    "node-sass": "^7.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0"
+  }
+}

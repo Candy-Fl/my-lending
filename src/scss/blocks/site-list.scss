@@ -1,0 +1,31 @@
+.site-list {
+    margin: 0;
+    padding: 0;
+
+    @media (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 33px 0;
+        border-bottom: 1px solid var(--basic-gray);
+    }
+}
+
+.site-list a {
+    font-weight: bold;
+    color: var(--basic-gray);
+    padding:10px 0;
+    display: block;
+
+    &:focus,
+    &:hover {
+        color:var(--basic-black);
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
+}
+
+.site-list__item {
+    display: block;
+}

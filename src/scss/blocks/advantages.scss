@@ -1,0 +1,74 @@
+.advantages-list {
+    @media (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.advantages-list__item {
+    position: relative;
+}
+
+.advantages-list__item p{
+    text-align: center;
+    font-size: 14px;
+    color: var(--basic-black);
+    margin-bottom: 41px;
+}
+
+.advantages-list__item--html {
+    &::before {
+        content: "";
+        width: 88px;
+        height: 88px;
+        background-image: url("../../../src/icons/html.svg");
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.advantages-list__item--css {
+    &::before {
+        content: "";
+        width: 88px;
+        height: 88px;
+        background-image: url("../../../src/icons/css.svg");
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.advantages-list__item--js {
+    &::before {
+        content: "";
+        width: 88px;
+        height: 88px;
+        background-image: url("../../../src/icons/js.svg");
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.advantages-list__item--git {
+    &::before {
+        content: "";
+        width: 88px;
+        height: 88px;
+        background-image: url("../../../src/icons/git.svg");
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.advantages-list__item--figma {
+    &::before {
+        content: "";
+        width: 88px;
+        height: 88px;
+        background-image: url("../../../src/icons/figma.svg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        display: block;
+        margin: 0 auto;
+    }
+}

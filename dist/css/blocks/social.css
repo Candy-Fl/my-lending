@@ -1,0 +1,35 @@
+.social-list {
+  margin-top: 52px;
+  margin-bottom: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .social-list {
+    width: 342px;
+    margin: 90px auto;
+  }
+}
+
+.social-list__item {
+  width: 48px;
+  height: 48px;
+}
+
+.social-list__item--telegram {
+  background-image: url("../../../src/icons/footer/telegram.svg");
+}
+
+.social-list__item--instagram {
+  background-image: url("../../../src/icons/footer/Instagram.svg");
+}
+
+.social-list__item--gmail {
+  background-image: url("../../../src/icons/footer/Google.svg");
+}
+
+.social-list__item--github {
+  background-image: url("../../../src/icons/footer/github.svg");
+}
+
+/*# sourceMappingURL=social.css.map */

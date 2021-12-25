@@ -1,0 +1,14 @@
+.page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 82px;
+}
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    width: 80%;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=page-footer.css.map */

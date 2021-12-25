@@ -1,0 +1,102 @@
+.main-nav {
+    margin-top: 64px;
+    font-size: 30px;
+    line-height: 40px;
+    z-index: 2;
+
+    @media (min-width:768px) {
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+.main-nav__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+
+    @media (min-width:768px) {
+        width: 80%;
+        max-width: 940px;
+        margin: 0 auto;
+    }
+}
+
+.main-nav__toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    z-index: 2;
+
+    @media (min-width:768px) {
+        display: none;
+    }
+}
+
+.main-nav--opened {
+    .main-nav__toggle {
+
+        &::before {
+            content: "";
+            width: 23px;
+            height: 23px;
+            position: absolute;
+            background-image: url("../../../src/images/toggler.svg");
+            top:0;
+            right: 0;
+        }
+    }
+
+    .main-nav__list {
+        position: absolute;
+        background-color: var(--basic-white);
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+.main-nav--closed {
+    .main-nav__list {
+        display: none;
+
+        @media (min-width:768px) {
+            display: flex;
+            justify-content: space-between;
+            padding: 33px 0;
+            border-bottom: 1px solid var(--basic-gray);
+        }
+    }
+
+    .main-nav__toggle {
+        &::before {
+            content: "";
+            width: 33px;
+            height: 4px;
+            content: "";
+            background-color: var(--basic-black);
+            position: absolute;
+            top: 0;
+            right: 0;
+            box-shadow: 0 9px 0 0 var(--basic-black), 0 18px 0 0 var(--basic-black);
+        }
+    }
+}
+
+.main-nav--nojs {
+    position: relative;
+    
+    .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav__list {
+        display: block;
+    }
+}

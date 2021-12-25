@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Candy-FL:Личный сайт</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="dist/css/styles.css">
+    </head>
+    <body class="page__body">
+        <header>
+            <nav class="main-nav main-nav--nojs main-nav--closed">
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item"><a href="#">Главная</a></li>
+                        <li class="site-list__item"><a href="#">Обо мне</a></li>
+                        <li class="site-list__item"><a href="#">Навыки</a></li>
+                        <li class="site-list__item"><a href="#">Портфолио</a></li>
+                        <li class="site-list__item"><a href="#">Контакты</a></li>
+                    </ul>
+                    <button class="main-nav__toggle" type="button">
+                        <span class="visually-hidden">Перключить меню</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main class="page-main">
+            <section class="main-intro">
+                <div class="main-intro__wrapper">
+                    <h1 class="main-intro__header">
+                        Алексей<br>
+                        Ким
+                    </h1>
+                    <p class="main-intro__description">
+                        Front-end Developer<br>
+                        20 лет, Новосибирск
+                    </p>
+                    <span class="page-main__photo">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="src/images/my-photo-mobile.jpg 1x, src/images/my-photo-mobile@2x.jpg 2x">
+                            <source media="(min-width: 769px)" srcset="src/images/my-photo@2x.jpg 2x">
+                            <img src="src/images/my-photo.jpg" alt="Моя фотография">
+                        </picture>
+                    </span>
+                </div>
+            </section>
+
+        <section class="about">
+            <div class="about__wrapper">
+                <h2 class="abut__header">Обо мне</h2>
+                <p class="about__description about__description--first">Привет! Меня зовут - Алексей, я Начинающий Front-end Developer из Новосибирска</p>
+                <p class="about__description about__description--second">В данный момент я учусь в <a href="https://htmlacademy.ru">htmlacademy</a> по профессии 'Front-end Разработчик'</p>
+                <p class="about__description about__description--third">Готов присоедениться к крутым проектам с прекрасными людьми</p>
+            </div>
+        </section>
+            <section class="skills">
+                <div class="skills__wrapper">
+                    <h2 class="skills__header">Мои навыки</h2>
+                    <p class="skills__description">Я работаю с замечательными</p>
+                    <ul class="skills__list  advantages-list">
+                        <li class="advantages-list__item advantages-list__item--html"><p>HTML</p></li>
+                        <li class="advantages-list__item advantages-list__item--css"><p>CSS</p></li>
+                        <li class="advantages-list__item advantages-list__item--js"><p>JavaSript</p></li>
+                        <li class="advantages-list__item advantages-list__item--git"><p>Git</p></li>
+                        <li class="advantages-list__item advantages-list__item--figma"><p>Figma</p></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="my-cases">
+                <div class="my-cases__wrapper">
+                    <h2 class="my-cases__header">Портфолио</h2>
+                    <ul class="my-cases__list made-list">
+                        <li class="made-list__item made-list__item--nerds">
+                            <span class="made-list__photo">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="src/images/nerds-mobile.jpg 1x, src/images/nerds-mobile@2x.jpg 2x">
+                                    <source media="(min-width:769px)" srcset="src/images/nerds.jpg 1x, src/images/nerds@2x.jpg 2x">
+                                    <img src="src/images/nerds.jpg" alt="Изображение проекта Keksobooking">
+                                </picture>
+                            </span>
+                            <a href=#><p class="made-list__description">Магазин онлайн-студии Nerds</p></a>
+                        </li>
+                        <li class="made-list__item made-list__item--sedona">
+                            <span class="made-list__photo">
+                               <picture>
+                                    <source media="(max-width: 768px)" srcset="src/images/sedona-mobile.jpg 1x, src/images/sedona-mobile@2x.jpg 2x">
+                                    <source media="(min-width:769px)" srcset="src/images/sedona.jpg 1x, src/images/sedona@2x.jpg 2x">
+                                    <img src="src/images/sedona.jpg" alt="Изображение проекта Keksobooking">
+                                </picture>
+                            </span>
+                            <a href=#><p class="made-list__description">Сайт города Седона (Аризона,США)</p></a>
+                        </li>
+                        <li class="made-list__item made-list__item--booking">
+                            <span class="made-list__photo">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="src/images/booking-mobile.jpg 1x, src/images/booking-mobile@2x.jpg 2x">
+                                    <source media="(min-width:769px)" srcset="src/images/booking.jpg 1x, src/images/booking@2x.jpg 2x">
+                                    <img src="src/images/booking.jpg" alt="Изображение проекта Keksobooking">
+                                </picture>
+                            </span>
+                            <a href=#><p class="made-list__description">Сайт для поиска жилья Keksobooking</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <div class="page-footer__wrapper">
+                <section class="contats">
+                    <h2 class="contacts__header">
+                        Контакты
+                    </h2>
+                    <p class="contacts__description">
+                        Спасибо за уделенное время!<br>
+                        Хотите узнать больше или просто пообщаться?
+                        You are welcome!
+                    </p>
+                    <ul class="contacts__list social-list">
+                        <li class="social-list__item social-list__item--instagram"><a class="visually-hidden">instagram</a></li>
+                        <li class="social-list__item social-list__item--telegram"><span class="visually-hidden">telegram</span></li></li>   
+                        <li class="social-list__item social-list__item--github"><span class="visually-hidden">github</span></li></li>
+                        <li class="social-list__item social-list__item--gmail"><span class="visually-hidden">gmail</span></li></li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+    </body>
+    <script src="src/js/sriprt.js"></script>
+</html>

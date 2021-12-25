@@ -1,0 +1,31 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 0;
+    border-bottom: 1px solid var(--basic-gray);
+  }
+}
+
+.site-list a {
+  font-weight: bold;
+  color: var(--basic-gray);
+  padding: 10px 0;
+  display: block;
+}
+.site-list a:focus, .site-list a:hover {
+  color: var(--basic-black);
+}
+.site-list a:active {
+  opacity: 0.3;
+}
+
+.site-list__item {
+  display: block;
+}
+
+/*# sourceMappingURL=site-list.css.map */

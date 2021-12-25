@@ -1,0 +1,31 @@
+.about {
+    margin-top: 83px;
+    background-color: var(--modern-white);
+    padding: 60px 0;
+}
+
+.about__wrapper {
+    width: 320px;
+    margin: 0 auto;
+
+    @media (min-width:768px) {
+        width: 80%;
+        max-width: 940px;
+        margin: 0 auto;
+    }
+}
+
+.abut__header {
+    font-size: 34px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.about__description {
+    text-align: center;
+}
+
+.about__description--second,
+.about__description--third {
+    margin-top: 30px;
+}

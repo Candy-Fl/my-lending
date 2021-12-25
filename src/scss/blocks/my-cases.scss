@@ -1,0 +1,26 @@
+.my-cases {
+    background-color: var(--modern-white);
+    padding-top: 40px;
+    padding-bottom: 62px;
+
+    @media (min-width:768px) {
+        padding-bottom: 78px;
+    }
+}
+
+.my-cases__wrapper {
+    width: 320px;
+    margin: 0 auto;
+
+    @media (min-width:768px) {
+        width: 80%;
+        max-width: 940px;
+        margin: 0 auto;
+    }
+}
+
+.my-cases__header {
+    font-size: 34px;
+    line-height: 44px;
+    text-align: center;
+}
